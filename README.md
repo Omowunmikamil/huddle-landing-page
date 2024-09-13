@@ -1,4 +1,6 @@
-# Frontend Mentor - Fylo landing page with two-column layout solution
+# Frontend Mentor - Huddle landing page with alternating feature blocks solution
+
+This is a solution to the [Huddle landing page with alternating feature blocks challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -9,8 +11,10 @@
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -23,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Mockup](./images/readme-image.png)
+![](./images/readme-image.png)
 
 ### Links
 
-- Solution URL: [Take a view at my solution](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-flexbox-layout-and-hover-states-Bv_sWaU5Kb)
-- Live Site URL: [Visit Live Site](https://omowunmikamil.github.io/fylo-landing-page-with-two-column-layout/)
+- Solution URL: [Click here to view my solution](https://www.frontendmentor.io/solutions/responsive-huddle-landing-page-d9MwU29DRv)
+- Live Site URL: [Click here to visit the live site](https://omowunmikamil.github.io/huddle-landing-page/)
 
 ## My process
 
@@ -37,126 +41,67 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
-I learned how to use the grid and flexbox to create a two-column layout. I also learned how to use the position property to position elements on the page.
-
+I learned how to make my webpage responsive on all sectionises screen type. I also learned how to use flexbox to align items in a row or column. I also learned how to use media queries to make my webpage responsive on all screen sizes.
 ```html
-<h1>Some HTML code I'm proud of</h1>
-<section id="hero-section">
-      <article class="left-article">
-        <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
-      <article class="input-email">
-        <input type="email" id="email" name="email" placeholder="Enter your email...">
-        <button>Get Started</button>
-      </article>
-      </article>
-      <article class="right-article">
-        <img src="images/illustration-1.svg">
-      </article>
-</section>
-
-<section id="curve">
+<section class="container">
+  <section class="content">
+    <h1>Some HTML code I'm proud of</h1>
+  </section>
 </section>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-#hero-section, #body-article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*border: 2px solid yellow;*/
-    padding: 2em 4em;
-    margin: 1em 0;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.left-article {
-    width: 45%;
-    /*border: 2px solid blue;*/
+#header {
+  background-color: var(--very-pale-cyan);
 }
 
-.right-article {
-    width: 50%;
-    /*border: 2px solid red;*/
-}
-
-.left-article h1 {
-    font-size: 2.3em;
-    font-weight: 600;
-    line-height: 3.3rem;
-    color: hsl(243, 87%, 12%);
-}
-
-.left-article p {
-    font-size: 1.1em;
-    color: hsl(243, 87%, 12%);
-    padding-right: 1.4em;
-    margin: 1em 0 1.5em;
-}
-
-.right-article img {
-    width: 100%;
-}
-
-.input-email {
-    width: 86%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*border: 2px solid blue;*/
-}
-
-.input-email input {
-    width: 57%;
-    height: 50px;
-    outline: none;
-    border: 1px solid black;
-    border-radius: 4px;
-    padding-top: 2em;
-}
-
-input[type="email"] {
-    padding: 10px 20px 6px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.input-email button {
-    width: 40%;
-    height: 50px;
-    background-color: hsl(224, 93%, 58%);
-    color: white;
+button {
+    background-color: #fff;
+    color: var(--very-dark-cyan);
+    font-size: 16px;
+    width: 200px;
+    padding: 14px 20px;
+    border-radius: 50px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.input-email button:hover {
-    background-color: hsl(223, 87%, 63%);
+.component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 4em;
+    margin: 1.5em 0;
 }
-#curve {
-    width: 100%;
-    /*border: 2px solid green;*/
-    height: 100px;
-    background-image: url(./images/bg-curve-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 6em;
+
+@media (max-width: 768px) {
+    .component {
+        flex-direction: column;
+    }
 }
 ```
 
+### Continued development
+
+I will continue to learn more about flexbox and grid. I will also learn more about media queries and how to make my webpage responsive on all screen sizes. I will also learn more about CSS custom properties and how to use them in my projects.
+
 ## Author
 
-- Website - [Visit my Portfolio Website](https://omowunmi-kamiludeen.netlify.app/)
+- Website - [Visit my Portfolio Website](https://omowunmikamil.tech)
 - Frontend Mentor - [Omowunmi Kamiludeen](https://www.frontendmentor.io/profile/Omowunmikamil)
 - Twitter - [Browser_Nerd](https://www.twitter.com/@Browser_Nerd)
 
 ## Acknowledgments
 
-frontend mentor - For providing easy access to this challenge and its resources
+I would like to thank Frontend Mentor for providing me with this challenge.
